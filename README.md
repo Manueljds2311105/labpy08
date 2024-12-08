@@ -27,6 +27,7 @@ def tambah(self, nama, tugas, uts, uas):
     print(f"Data untuk {nama} berhasil ditambahkan.")
 ```
 - Menambahkan data mahasiswa ke dalam dictionary data_mahasiswa dengan kunci berupa nama dan nilai berupa tuple (tugas, uts, uas).
+
 c. Tampilkan
 ```python
 def tampilkan(self):
@@ -39,6 +40,7 @@ def tampilkan(self):
             print(f"Nama: {nama}, Tugas: {tugas}, UTS: {uts}, UAS: {uas}")
 ```
 - Menampilkan seluruh data mahasiswa jika ada, atau pesan bahwa data belum tersedia jika dictionary kosong.
+  
 d. Hapus
 ```python
 def hapus(self, nama):
@@ -49,6 +51,7 @@ def hapus(self, nama):
         print(f"Data untuk {nama} tidak ditemukan.")
 ```
 - Menghapus data mahasiswa berdasarkan nama. Jika nama tidak ditemukan, program akan menampilkan pesan tidak ada data.
+  
 e. Ubah
 ```python
 def ubah(self, nama, nilai_baru):
@@ -59,6 +62,7 @@ def ubah(self, nama, nilai_baru):
         print(f"Data untuk {nama} tidak ditemukan.")
 ```
 - Mengubah data mahasiswa berdasarkan nama. nilai_baru adalah nilai yang akan menggantikan data sebelumnya.
+  
 f. Loop Program
 ```python
 while True:

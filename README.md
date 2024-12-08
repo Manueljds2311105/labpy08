@@ -65,21 +65,36 @@ def ubah(self, nama, nilai_baru):
   
 f. Loop Program
 ```python
-while True:
-    print("\nMenu:")
-    ...
-    pilihan = input("Pilih menu: ")
+    while True:
+        print("\nMenu:")
+        print("1. Tambah data")
+        print("2. Tampilkan data")
+        print("3. Hapus data")
+        print("4. Ubah data")
+        print("5. Keluar")
 
-    if pilihan == "1":
-        nama = input("Nama: ")
-        tugas = int(input("Nilai Tugas: "))
-        uts = int(input("Nilai UTS: "))
-        uas = int(input("Nilai UAS: "))
-        daftar.tambah(nama, tugas, uts, uas)
-    ...
-    elif pilihan == "5":
-        print("Keluar dari program...")
-        break
+        pilihan = input("Pilih menu: ")
+
+        if pilihan == "1":
+            nama = input("Nama: ")
+            tugas = int(input("Nilai Tugas: "))
+            uts = int(input("Nilai UTS: "))
+            uas = int(input("Nilai UAS: "))
+            daftar.tambah(nama, tugas, uts, uas)
+        elif pilihan == "2":
+            daftar.tampilkan()
+        elif pilihan == "3":
+            nama = input("Masukkan nama yang akan dihapus: ")
+            daftar.hapus(nama)
+        elif pilihan == "4":
+            nama = input("Masukkan nama yang akan diubah: ")
+            nilai_baru = input("Masukkan nilai baru: ")
+            daftar.ubah(nama, nilai_baru)
+        elif pilihan == "5":
+            print("Keluar dari program...")
+            break
+        else:
+            print("Pilihan tidak valid. Silakan coba lagi.")
 ```
 - Program terus berjalan dalam loop hingga pengguna memilih opsi "Keluar".
 - Input dari pengguna menentukan tindakan yang akan dilakukan, seperti menambah, menampilkan, menghapus, atau mengubah data.
